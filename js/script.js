@@ -1,7 +1,10 @@
-// Инициализация EmailJS
+//иницализация
 emailjs.init("a5uj2CONPR1wgemgT");
 
 const formMain = document.querySelector("#appointment-form")
+const modalSuccessRequest = document.querySelector("#successModal")
+const modalErrorRequst = document.querySelector("#errorModal")
+const closeModalWindow = document.querySelectorAll(".modalClose")
 
 formMain.addEventListener("submit",submitForm)
 
@@ -13,7 +16,8 @@ function submitForm(e) {
   const phone = document.getElementById("phoneForm").value;
   const message = document.getElementById("messageForm").value;
 
-  // Определение параметров для отправки электронной почты через EmailJS
+  console.log(modalErrorRequst,modalSuccessRequest)
+
   const emailParams = {
     from_name: from_name,
     email: email,
@@ -21,15 +25,28 @@ function submitForm(e) {
     message: message
   };
 
-  // Отправка запроса на отправку электронной почты через EmailJS
+  // Отправка запроса на отправку электронной почты
   emailjs.send("service_v46gm0b", "template_z3y1xr8", emailParams)
     .then(response => {
       console.log('Email sent successfully:', response);
       formMain.reset()
-      alert('Email sent successfully!');
+      modalSuccessRequest.style.display = "block"
     })
     .catch(error => {
       console.error('Error sending email:', error);
-      alert('Error sending email.');
+      modalErrorRequst.style.display = "block"
     });
 }
+
+//closing modal function
+console.log(closeModalWindow)
+
+closeModalWindow.forEach((closeItem) =>{
+  closeItem.addEventListener("click",() =>{
+    modalSuccessRequest.style.display = "none"
+    modalErrorRequst.style.display = "none"
+  })
+})
+
+
+

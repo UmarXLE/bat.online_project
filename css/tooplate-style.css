@@ -1213,3 +1213,54 @@ http://www.tooplate.com/view/2098-health
 .card-accept p {
   padding-top: 15px;
 }
+
+
+/*modal window*/
+
+.modalWindow {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.64);
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.modalWindow-container {
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width: 50%;
+  height: 300px;
+  background: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.relative {
+  position: relative;
+}
+
+.modalClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 101;
+  cursor: pointer;
+}
+
+.modalClose img {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .modalWindow-container {
+    width: 80%;
+    height: 350px;
+  }
+}
