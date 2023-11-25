@@ -1228,12 +1228,30 @@ http://www.tooplate.com/view/2098-health
   z-index: 100;
 }
 
+.successRequest {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  height:250px;
+}
+
+.modalWindow h2 {
+  padding: 10px 0;
+  margin: 0;
+  line-height: 110%;
+}
+
+.modalWindow p {
+  font-size: 18px;
+}
+
 .modalWindow-container {
   position: fixed;
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
-  width: 50%;
+  width: 40%;
   height: 300px;
   background: white;
   text-align: center;

@@ -309,7 +309,7 @@
                <div class="row wow fadeInUp" data-wow-delay="0.6s">
                     <div class="containerSlider">
                          <div class="gtco-testimonials">
-                              <div class="owl-carousel owl-carousel-reviews owl-theme">
+                              <div class="owl-carousel owl-carousel-reviews owl-theme" id="reviewsContainer">
                                    <div>
                                         <div class="card text-center"><img class="card-img-top" src="./images/reviews-4.jpeg" alt="Отзывы клиентов">
                                              <div class="card-body">
@@ -343,6 +343,33 @@
                                                   <h5>Смирнов Дмитрий <br />
                                                   </h5>
                                                   <p class="card-text">“ Беспокоил простатит , самостоятельно не мог ходить по малой нужде , только через катетер, приобрел максилан полный курс , пропиваю на данный момент , чувствую улучшение , начал ходить самостоятельно по нужде, избавился от недуга ” </p>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div>
+                                        <div class="card text-center"><img class="card-img-top" src="./images/reviws-5.png" alt="Приятный отзыв от клиента">
+                                             <div class="card-body">
+                                                  <h5>Абыбар Косалипов <br />
+                                                  </h5>
+                                                  <p class="card-text">“ Неплохой результат. Больше брал для профилактики и для потенции. Эффект на потенцию не мгновенный, то есть это не виагра. Но после 1-2 недель приема эффект появляется и сохраняется долгое время. Поэтому судите сами, что лучше. ” </p>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div>
+                                        <div class="card text-center"><img class="card-img-top" src="./images/reviews-6.png" alt="Приятный отзыв от клиента">
+                                             <div class="card-body">
+                                                  <h5>Боримек Нияов<br />
+                                                  </h5>
+                                                  <p class="card-text">“ Несмотря на то, что многие критикуют Максилан, хочу написать отзыв в его защиту. Я уже пользуюсь им более года и забыл, что такое, когда нет эрекции. Даная проблема была у меня более 10 лет, пока знакомый не посоветовал мне этот БАД. Рискнул, купил и теперь снова на коне. Не бойтесь рисковать, традиционная медицина простатит не лечит. ” </p>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div>
+                                        <div class="card text-center"><img class="card-img-top" src="./images/reviews-7.png" alt="Приятный отзыв от клиента">
+                                             <div class="card-body">
+                                                  <h5>Азамгали Байжанлин<br />
+                                                  </h5>
+                                                  <p class="card-text">“ Пропил 4 упаковки ( 2 месяца). Полностью пролечил простатит, ночных позывов и дополнительных признаков не проявляются. ” </p>
                                              </div>
                                         </div>
                                    </div>
@@ -444,10 +471,9 @@
                          <div class="footer-thumb">
                               <div class="opening-hours">
                                    <h4 class="wow fadeInUp" data-wow-delay="0.4s">График работы</h4>
-                                   <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
-                                   <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
-                                   <p>Sunday <span>Closed</span></p>
-                              </div> 
+                                   <p>Пн - Пт <span>09:00 - 00:00 </span></p>
+                                   <p>Сб - Вс <span>09:00 - 00:00 </span></p>
+                              </div>
 
                               <ul class="social-icon">
                                    <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
@@ -482,10 +508,11 @@
           </div>
      </footer>
 
+     <!-- Success request modal-->
      <div class="modalWindow" id="successModal">
           <div class="modalWindow-container relative">
                <div class="successRequest">
-                    <img src="./images/success.png" alt="Успешно отправлены данные">
+                   <div><img src="./images/success.png" alt="Успешно отправлены данные"></div>
                     <h2>Заявка успешно отправлена</h2>
                     <p>Наши менеджера скоро с вами свяжутся</p>
                </div>
@@ -499,7 +526,7 @@
      <div class="modalWindow" id="errorModal">
           <div class="modalWindow-container relative">
                <div class="successRequest">
-                    <img src="./images/error.png" alt="Успешно отправлены данные">
+                    <div><img src="./images/error.png" alt="Успешно отправлены данные"></div>
                     <h2>Произошла ошибка </h2>
                     <p>Попробуйте перезагрузить страницу</p>
                </div>
