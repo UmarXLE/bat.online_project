@@ -16,8 +16,6 @@ function submitForm(e) {
   const phone = document.getElementById("phoneForm").value;
   const message = document.getElementById("messageForm").value;
 
-  console.log(modalErrorRequst,modalSuccessRequest)
-
   const emailParams = {
     from_name: from_name,
     email: email,
@@ -39,8 +37,6 @@ function submitForm(e) {
 }
 
 //closing modal function
-console.log(closeModalWindow)
-
 closeModalWindow.forEach((closeItem) =>{
   closeItem.addEventListener("click",() =>{
     modalSuccessRequest.style.display = "none"
